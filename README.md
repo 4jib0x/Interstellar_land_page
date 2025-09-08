@@ -14,7 +14,7 @@ Here is a preview of the landing page on different screen sizes:
 
 | Desktop View | Mobile View |
 | :---: | :---: |
-| ![Desktop Screenshot](https://via.placeholder.com/800x450.png?text=Add+Desktop+Screenshot+Here ) | ![Mobile Screenshot](https://via.placeholder.com/250x450.png?text=Add+Mobile+Screenshot+Here ) |
+| ![Desktop Screenshot](assets/md/landing_page.png ) | ![Mobile Screenshot](assets/md/land_page_mobile.jpeg ) |
 
 *(**Note:** To add your images, replace the placeholder URLs above with the links to your screenshots.)*
 
