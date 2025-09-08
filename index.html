@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title">Interstellar - Landing Page</title>
+    <meta
+      name="description"
+      content="Simple landing page for Interstellar using Bootstrap"
+      data-i18n-meta="meta.description"
+    />
+
+    <link
+      id="bootstrap-css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      data-href-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      data-href-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">Interstellar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#highlights" data-i18n="nav.highlights"
+                >Highlights</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery" data-i18n="nav.gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trailer" data-i18n="nav.trailer"
+                >Trailer</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex gap-2 ms-lg-3 mt-2 mt-lg-0 lang-switch">
+            <button class="btn btn-sm btn-outline-light" data-set-lang="en">
+              EN
+            </button>
+            <button class="btn btn-sm btn-outline-light" data-set-lang="ar">
+              AR
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      id="home"
+      class="hero d-flex align-items-center text-center text-white"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">Interstellar</h1>
+        <p class="lead mb-4" data-i18n="hero.subtitle">
+          A human journey across the stars about hope, family, and time.
+        </p>
+        <div class="d-flex gap-2 justify-content-center flex-wrap">
+          <a
+            href="#about"
+            class="btn btn-primary btn-lg"
+            data-i18n="hero.learnmore"
+            >Learn more</a
+          >
+          <button
+            class="btn btn-outline-light btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#trailerModal"
+            data-i18n="hero.watch"
+          >
+            Watch trailer
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <h2 class="h1 mb-2" data-i18n="about.title">About Interstellar</h2>
+            <div
+              class="d-inline-flex align-items-center gap-2 mb-3"
+              aria-label="rating"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="#f5c518"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.786 1.402 8.168L12 18.896l-7.336 3.868 1.402-8.168L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <div>
+                <div>
+                  <strong>8.7</strong><span class="text-muted">/10</span>
+                </div>
+                <div class="text-muted small" data-i18n="rating.votes">
+                  2.4M
+                </div>
+              </div>
+            </div>
+            <p class="text-muted mb-3" data-i18n="about.text">
+              A science-fiction film by Christopher Nolan. A team of astronauts
+              embarks on a daring mission through a wormhole to find a new home
+              for humanity.
+            </p>
+            <p class="text-muted mb-3" data-i18n="about.synopsis">
+              Set in a near-future Earth facing ecological collapse,
+              pilot-turned-farmer Cooper joins a covert NASA mission to travel
+              through a wormhole in search of habitable worlds, balancing cosmic
+              stakes with personal sacrifice.
+            </p>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li><span data-i18n="about.list.release">Release:</span> 2014</li>
+              <li>
+                <span data-i18n="about.list.director">Director:</span>
+                Christopher Nolan
+              </li>
+              <li>
+                <span data-i18n="about.list.runtime">Runtime:</span> ~169 min
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-fluid rounded shadow-sm poster-img"
+              alt="Interstellar official poster"
+              src="./assets/poster.png"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1447433819943-74a20887a81e?q=80&w=1400&auto=format&fit=crop'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights" class="py-5">
+      <div class="container">
+        <h2 class="h1 text-center mb-4" data-i18n="highlights.title">
+          Highlights
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title" data-i18n="highlights.story.title">
+                  Story
+                </h3>
+                <p
+                  class="card-text small text-muted"
+                  data-i18n="highlights.story.text"
+                >
+                  A quest for humanity’s survival blending science with emotion.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title" data-i18n="highlights.music.title">
+                  Score
+                </h3>
+                <p
+                  class="card-text small text-muted"
+                  data-i18n="highlights.music.text"
+                >
+                  Hans Zimmer’s score adds unforgettable emotional depth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3
+                  class="h5 card-title"
+                  data-i18n="highlights.cinematography.title"
+                >
+                  Cinematography
+                </h3>
+                <p
+                  class="card-text small text-muted"
+                  data-i18n="highlights.cinematography.text"
+                >
+                  Stunning space visuals and a powerful cinematic experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h1 text-center mb-4" data-i18n="gallery.title">Gallery</h2>
+        <div
+          id="galleryCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner rounded shadow-sm">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="./assets/photo1.png"
+                class="d-block w-100"
+                alt="Interstellar still 1"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo2.png"
+                class="d-block w-100"
+                alt="Interstellar still 2"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo3.png"
+                class="d-block w-100"
+                alt="Interstellar still 3"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo4.png"
+                class="d-block w-100"
+                alt="Interstellar still 4"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo5.png"
+                class="d-block w-100"
+                alt="Interstellar still 5"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo6.jpg"
+                class="d-block w-100"
+                alt="Interstellar still 6"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo7.jpg"
+                class="d-block w-100"
+                alt="Interstellar still 7"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo8.jpg"
+                class="d-block w-100"
+                alt="Interstellar still 8"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/photo9.png"
+                class="d-block w-100"
+                alt="Interstellar still 9"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trailer -->
+    <section id="trailer" class="py-5">
+      <div class="container text-center">
+        <h2 class="h1 mb-3" data-i18n="trailer.title">Trailer</h2>
+        <p class="text-muted mb-4 small" data-i18n="trailer.subtitle">
+          Watch the trailer below.
+        </p>
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: 960px">
+          <iframe
+            src="https://www.youtube.com/embed/zSWdZVtXT7E?rel=0"
+            title="Interstellar Trailer"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 pt-5">
+      <div class="container">
+        <div class="row g-4 pb-4">
+          <div class="col-12 col-md-4">
+            <h5 class="text-white mb-3">Interstellar</h5>
+            <p class="small mb-2">
+              Fan-made landing page for learning purposes only.
+            </p>
+            <p class="small mb-0">
+              © <span id="year"></span> Interstellar Demo.
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="text-white">Explore</h6>
+            <div class="d-flex flex-column gap-1">
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Overview
+              </button>
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Cast
+              </button>
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Photos
+              </button>
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Videos
+              </button>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="text-white">Legal</h6>
+            <div class="d-flex flex-column gap-1">
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Terms
+              </button>
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Privacy
+              </button>
+              <button
+                class="btn btn-link btn-sm text-start text-white-50 p-0"
+                type="button"
+              >
+                Cookies
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="trailerModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-white" data-i18n="modal.title">
+              Interstellar Trailer
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0 ratio ratio-16x9">
+            <iframe
+              id="trailerFrame"
+              src="https://www.youtube.com/embed/zSWdZVtXT7E?rel=0"
+              title="Interstellar Trailer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
