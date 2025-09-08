@@ -23,14 +23,21 @@ Here is a preview of the landing page on different screen sizes:
 ## ✨ Core Features
 
 *   **Fully Responsive Design:** The layout seamlessly adapts to all screen sizes, from mobile phones to desktops, with special attention given to the mobile experience.
-*   **Bilingual Support (i18n):** The page includes a language switcher to dynamically toggle between English and Arabic content using JavaScript.
+*   **Bilingual Support (EN / AR):** The entire page is available in both English and Arabic, with a simple UI to switch between them.
 *   **Interactive Components:** Utilizes Bootstrap components like the Navbar, Carousel, and Modal to create an engaging and interactive user interface.
 *   **Modern & Clean UI:** Built with Bootstrap 5 for a robust, consistent, and modern layout.
 *   **Dynamic Content:** JavaScript is used to handle language changes, update the copyright year automatically, and manage the trailer modal.
 
-## 🛠️ Technologies Used
+## 🌍 Internationalization (i18n)
 
-This project was built using the following technologies:
+One of the key features of this project is its support for multiple languages.
+
+*   **Language Switcher:** A simple button group in the navigation bar allows users to switch between **English (EN)** and **Arabic (AR)**.
+*   **Dynamic Text:** All text content is managed through a JavaScript dictionary, allowing for easy updates and translations.
+*   **RTL/LTR Support:** The page layout correctly switches between Left-to-Right (LTR) for English and Right-to-Left (RTL) for Arabic by dynamically changing the `dir` attribute on the HTML tag and loading the appropriate Bootstrap RTL stylesheet.
+*   **State Persistence:** The selected language is saved in the browser's `localStorage`, so the user's preference is remembered on their next visit.
+
+## 🛠️ Technologies Used
 
 *   **HTML5:** For the structure and content of the page.
 *   **CSS3:** For custom styling, animations, and creating the unique visual atmosphere.
@@ -57,17 +64,6 @@ All you need is a modern web browser. No complex installations are required.
     ```
 3.  **Open the project:**
     Open the `index.html` file in your favorite web browser to view the landing page.
-
-    ```sh
-    # On Windows
-    start index.html
-
-    # On macOS
-    open index.html
-
-    # On Linux
-    xdg-open index.html
-    ```
 
 ## 📄 License
 
