@@ -56,7 +56,7 @@ All you need is a modern web browser. No complex installations are required.
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/abdou-agiba/Interstellar_land_page.git
+    git clone https://github.com/4jib0x/Interstellar_land_page.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
