@@ -4,7 +4,7 @@ A visually captivating and responsive landing page inspired by Christopher Nolan
 
 This project was also a significant learning milestone, as it was my first complete project utilizing the **Bootstrap 5** framework. A great deal of effort was dedicated to ensuring the design is **highly responsive**, especially on mobile devices.
 
-### 🎬 [Live Demo](https://abdou-agiba.github.io/Interstellar_land_page/ )
+### 🎬 [Live Demo](https://4jib0x.github.io/Interstellar_land_page/)
 
 ---
 
